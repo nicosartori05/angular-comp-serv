@@ -22,14 +22,14 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   constructor(){
     // before render
     // NO async -- Once time
-    console.log('Constructor', 'imgValue =>', this.img);
+    // console.log('Constructor', 'imgValue =>', this.img);
   }
 
   ngOnChanges(changes: SimpleChanges){
     //before render
     //changes inputs - times
-    console.log('ngOnChanges', 'imgValue =>', this.img);
-    console.log('changes',changes);
+    // console.log('ngOnChanges', 'imgValue =>', this.img);
+    // console.log('changes',changes);
   }
   ngOnInit(): void {
     //before render
@@ -43,11 +43,11 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   ngAfterViewInit(): void {
     // after render
     //handler children
-    console.log('ngAfterViewInit');
+    // console.log('ngAfterViewInit');
   }
   ngOnDestroy(): void {
     //delete
-    console.log('ngOnDestroy');
+    // console.log('ngOnDestroy');
     // window.clearInterval(this.counterFn);
   }
   imgError(){
@@ -55,7 +55,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   }
 
   imgLoaded(){
-    console.log('loag hijo');
+    // console.log('loag hijo');
     this.loaded.emit(this.img);
   }
 }
